@@ -12,17 +12,17 @@ public class Posts_Chapter07 {
 		// TODO 自動生成されたメソッド・スタブ
 		
 		Connection con = null;
-		Statement statement= null;
+		Statement statement = null;
 		
 		try {
 			//データベースに接続
 			con = DriverManager.getConnection(
 			   "jdbc:mysql://localhost/challenge_java",
 		       "root",
-		       "パスワード"
+		       "0320"
 		     ); 	
 			
-			System.out.println("データベース接続成功");
+			System.out.println("データベース接続成功:" + con.toString());
 			
 		//SQLクエリを実行するためのStatemantを作成
 			Statement st = con.createStatement();
